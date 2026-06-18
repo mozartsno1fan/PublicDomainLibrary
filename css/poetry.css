@@ -1,38 +1,13 @@
+@font-face {
+    font-family: 'Junicode';
+    src: url('./junicode/Junicode.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-
-  body                 {margin-left: 10%; margin-right: 10%; }
-  p                    {text-align: justify;}
-  blockquote           {text-align: justify;}
-  h1,h2,h3,h4,h5,h6    {text-align: center;}
-  pre                  {font-size: 0.7em;}
-
-  table                {padding: 1em; }
-  td                   {vertical-align: top; }
-  hr                   {text-align: center; width: 50%;}
-  html>body hr         {margin-right: 25%; margin-left: 25%; width: 50%;}
-  hr.full              {width: 100%;}
-  html>body hr.full    {margin-right: 0%; margin-left: 0%; width: 100%;}
-  hr.short             {text-align: center; width: 20%;}
-  html>body hr.short   {margin-right: 40%; margin-left: 40%; width: 20%;}
-
-  .note
-  {margin-left: 10%; margin-right: 10%; font-size: 0.9em;}
-
-  span.pagenum
-  {position: absolute; left: 1%; right: 91%; font-size: 8pt;}
-
-  span.linenum
-  {position: absolute; left: 5%; right: 91%; }
-
-  span.sidenote
-  {position: absolute; left: 65%; font-size: 8pt; }
-
-  .poem
-  {margin-left:5%; margin-right:10%; margin-bottom: 1em; text-align: left;}
-  .poem .stanza        {margin: 1em 0em 1em 0em;}
-  .poem p              {margin: 0; padding-left: 3em; text-indent: -3em;}
-  .poem p.i2           {margin-left: 1em;}
-  .poem p.i4           {margin-left: 2em;}
-  .poem p.i6           {margin-left: 3em;}
-  .poem p.i8           {margin-left: 4em;}
-  
+header {
+    font-family: 'Junicode', serif;
+}
+body {
+    font-family: 'Junicode', serif;
+}
