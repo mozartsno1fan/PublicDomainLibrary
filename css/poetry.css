@@ -7,11 +7,13 @@
 
 body {
     font-family: 'Junicode';
-    margin-left: 10%; 
-    margin-right: 10%;
+    max-width: 8.5in;
+    margin-left: 0.5in;
+    margin-right: 0.5in;
 }
 p {
 font-family: 'Junicode'; 
+font-size: 12pt;
 text-align: justify;
 }
 blockquote {
@@ -38,14 +40,18 @@ html>body hr.short   {margin-right: 40%; margin-left: 40%; width: 20%;}
 span.pagenum
 {position: absolute; left: 1%; right: 91%; font-size: 8pt;}
 
-span.linenum
-{position: absolute; left: 5%; right: 91%; }
+span.linenum {
+    position: absolute; 
+    font-size: 12pt;
+    left: 1in; 
+    right: 91%;
+}
 
 span.sidenote
 {position: absolute; left: 65%; font-size: 8pt; }
 
 .poem
-{margin-left:5%; margin-right:10%; margin-bottom: 1em; text-align: left;}
+{margin-left:2in; margin-right:1in; margin-bottom: 1em; text-align: left;}
 .poem .stanza        {margin: 1em 0em 1em 0em;}
 .poem p              {margin: 0; padding-left: 3em; text-indent: -3em;}
 .poem p.i2           {margin-left: 1em;}
