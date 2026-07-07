@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Junicode';
-    src: url('Junicode/Junicode.ttf') format('truetype');
+    src: url(..\Junicode\TTF\Junicode-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
