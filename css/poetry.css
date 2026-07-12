@@ -58,3 +58,13 @@ span.sidenote
 .poem p.i4           {margin-left: 2em;}
 .poem p.i6           {margin-left: 3em;}
 .poem p.i8           {margin-left: 4em;}
+
+.bibliography {
+list-style: none; /* Removes bullet points */
+padding-left: 0;
+}
+.bibliography li {
+padding-left: 36px;       /* Pushes the entire block right */
+text-indent: -36px;       /* Pulls only the first line back left */
+margin-bottom: 12px;      /* Adds clean spacing between entries */
+}
