@@ -8,22 +8,27 @@
 body {
     font-family: 'Junicode';
     max-width: 8.5in;
-    margin: 0 auto;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-bottom: 3em;
+    margin-right: auto;
     padding: 0 0.5in;
 }
 
-p {
-font-family: 'Junicode'; 
-font-size: 12pt;
-}
-
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Junicode';
     text-align: center;
 }
 
+p {
+font-size: 12pt;
+}
 .poem {
-    margin: 0 1in 1em 1in;
+    width: max-content;
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: 3em;
+    margin-right: auto;
     text-align: left;
     counter-reset: line-counter;
 }
@@ -41,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 .poem p.stanza {
     margin-top: 1em;
 }
-.poem p:nth-of-type(5n)::before {
+.poem p:nth-of-type(5n)::before {   /* Counts only every 5 p*/
     position: absolute;
     text-align: right;
     left: 0;
