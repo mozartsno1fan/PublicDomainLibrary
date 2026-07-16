@@ -8,45 +8,32 @@
 body {
     font-family: 'Junicode';
     max-width: 8.5in;
-    margin-top: 3em;
-    margin-left: auto;
-    margin-bottom: 3em;
-    margin-right: auto;
-    padding: 0 0.5in;
+    padding: 0 0.5in 0 0.5in;
 }
 
 h1,h2,h3,h4,h5,h6 {
     text-align: center;
+    counter-increment: none;
 }
 
-p {
-font-size: 12pt;
-}
 .poem {
     width: max-content;
     max-width: 100%;
-    margin-top: 0;
-    margin-left: auto;
-    margin-bottom: 3em;
-    margin-right: auto;
     text-align: left;
+    margin: 0 auto; /* Centers the poem container on the page */
     counter-reset: line-counter;
 }
+
 .poem p {
-    margin: 0; 
-    padding-left: 3em; 
-    text-indent: 0;
+    margin: 0;
+    padding-left:3em;
     position: relative;
     counter-increment: line-counter;
 }
 .poem p.i2 { padding-left: 5em; }
-.poem p.i4 { padding-left: 6em; }
-.poem p.i6 { padding-left: 7em; }
-.poem p.i8 { padding-left: 8em; }
-.poem p.stanza {
-    margin-top: 1em;
-}
-.poem p:nth-of-type(5n)::before {   /* Counts only every 5 p */
+.poem p.i4 { padding-left: 7em; }
+
+.poem p:nth-of-type(5n)::before {   /* Counts only every 5 */
     position: absolute;
     text-align: right;
     left: 0;
