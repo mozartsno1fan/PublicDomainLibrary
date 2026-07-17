@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Junicode';
+    src: url('../Junicode/TTF/Junicode-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Junicode';
+    max-width: 8.5in;
+    padding: 0 1in 0 1in;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    counter-increment: none;
+}
+
+.poem {
+    width: max-content;
+    max-width: 100%;
+    text-align: left;
+    margin: 0 auto; /* Centers the poem container on the page */
+    counter-reset: line-counter;
+}
+
+.poem p.stanza {
+    margin: 0 auto;
+    position: relative;
+    counter-increment: stanza-counter;
+}
+.poem p.stanza::before {
+    content: counter(stanza-counter, upper-roman);
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 5em;
+}
+
+.poem ol {
+    list-style: none;
+}
+.poem li {
+    position: relative;
+    counter-increment: line-counter;
+}
+.poem li:nth-of-type(5n)::before {
+    position: absolute;
+    text-align: right;
+    left: -3em;
+    top: 0;
+    content: counter(line-counter);
+    color: #888;
+}
+
+.poem span.i2 { padding-left: 2em; }
+.poem span.i4 { padding-left: 4em; }
+
+.bibliography {
+list-style: none;         /* Removes bullet points */
+padding-left: 0;
+}
+.bibliography li {
+padding-left: 3em;       /* Pushes the entire block right */
+text-indent: -3em;       /* Pulls only the first line back left */
+margin-bottom: 1em;      /* Adds clean spacing between entries */
+}
